@@ -86,7 +86,7 @@ app.delete('/:id',(req,res)=>{
 });
 
 
-db.connect(()=>{
+db.connect((err)=>{
     
     if(err){
         console.log('unable to connect to database');
